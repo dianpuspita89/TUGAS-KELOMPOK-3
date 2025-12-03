@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe App Keuangan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Hide scrollbar for clean UI */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-gray-200 p-10 min-h-screen">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+
+        <div class="bg-white w-[375px] h-[812px] mx-auto rounded-[40px] shadow-2xl overflow-hidden relative flex flex-col justify-center px-8 border-8 border-gray-900">
+            <div class="absolute top-0 left-0 w-full h-12 flex justify-between items-center px-6 mt-2">
+                <span class="text-xs font-bold">9:41</span>
+                <div class="w-16 h-1 bg-black rounded-full absolute left-1/2 transform -translate-x-1/2 top-4"></div>
+                <div class="flex gap-1">
+                    <div class="w-4 h-4 bg-gray-300 rounded-sm"></div>
+                    <div class="w-4 h-4 bg-gray-300 rounded-sm"></div>
+                </div>
+            </div>
+
+            <div class="space-y-6 mt-10">
+                <div class="h-32 w-32 bg-gray-200 rounded-full mx-auto mb-8"></div> <div class="space-y-4">
+                    <input type="email" placeholder="E-mail" class="w-full bg-gray-200 px-4 py-3 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-black">
+                    <input type="password" placeholder="Password" class="w-full bg-gray-200 px-4 py-3 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-black">
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <button class="bg-black text-white py-3 rounded-lg text-sm font-semibold">Masuk</button>
+                    <button class="bg-gray-300 text-gray-700 py-3 rounded-lg text-sm font-semibold">Daftar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white w-[375px] h-[812px] mx-auto rounded-[40px] shadow-2xl overflow-hidden relative flex flex-col border-8 border-gray-900">
+            <div class="pt-14 px-6 pb-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">Halo, Leanna!</h1>
+                        <p class="text-xs text-gray-500">November, 2025</p>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+                </div>
+                
+                <div class="mt-6">
+                    <p class="text-sm text-gray-500">Saldo saat ini</p>
+                    <h2 class="text-3xl font-bold text-gray-900 mt-1">Rp1.800.000<span class="text-gray-400 text-lg">,00</span></h2>
+                </div>
+
+                <div class="bg-gray-200 rounded-2xl p-4 mt-6">
+                    <div class="flex justify-between text-xs font-semibold mb-2">
+                        <span>Anggaran Bulan ini</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="w-full bg-white rounded-full h-2.5">
+                        <div class="bg-black h-2.5 rounded-full" style="width: 90%"></div>
+                    </div>
+                    <p class="text-[10px] text-gray-500 mt-2">Rp1.800.000 / Rp2.000.000</p>
+                </div>
+            </div>
+
+            <div class="flex-1 px-6 overflow-y-auto no-scrollbar">
+                <h3 class="text-sm font-bold mb-4">Transaksi terbaru</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between p-3 border border-gray-100 rounded-xl shadow-sm">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-gray-100 rounded-lg"></div>
+                            <div>
+                                <p class="text-sm font-bold">Token Listrik</p>
+                                <p class="text-xs text-gray-500">3 November</p>
+                            </div>
+                        </div>
+                        <span class="text-sm font-bold text-red-600">-Rp200.000</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 border border-gray-100 rounded-xl shadow-sm">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-gray-100 rounded-lg"></div>
+                            <div>
+                                <p class="text-sm font-bold">Gaji Bulanan</p>
+                                <p class="text-xs text-gray-500">1 November</p>
+                            </div>
+                        </div>
+                        <span class="text-sm font-bold text-green-600">+Rp2.000.000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-20 border-t flex justify-around items-center px-6 relative bg-white">
+                <div class="w-6 h-6 bg-gray-400 rounded-sm"></div> <div class="absolute -top-6 bg-gray-300 w-14 h-14 rounded-full flex items-center justify-center border-4 border-white shadow-lg text-2xl">+</div>
+                <div class="w-6 h-6 bg-gray-400 rounded-sm"></div> </div>
+        </div>
+
+        <div class="bg-white w-[375px] h-[812px] mx-auto rounded-[40px] shadow-2xl overflow-hidden relative flex flex-col border-8 border-gray-900">
+            <div class="pt-14 px-6 flex justify-between items-center mb-6">
+                <h1 class="text-lg font-bold">Tambah Transaksi</h1>
+                <button class="text-sm text-gray-500">Batal</button>
+            </div>
+
+            <div class="px-6 space-y-6">
+                <div class="flex bg-gray-100 p-1 rounded-full">
+                    <button class="w-1/2 bg-black text-white py-2 rounded-full text-sm font-medium shadow-md">Pengeluaran</button>
+                    <button class="w-1/2 text-gray-500 py-2 rounded-full text-sm font-medium">Pemasukan</button>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold mb-2">Jumlah</label>
+                    <div class="border border-gray-300 rounded-xl p-4 flex items-center">
+                        <span class="text-gray-400 mr-2">Rp</span>
+                        <input type="number" placeholder="0" class="w-full outline-none text-lg font-bold">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold mb-2">Kategori</label>
+                    <select class="w-full border border-gray-300 rounded-xl p-4 bg-white text-sm outline-none appearance-none">
+                        <option>Makanan & Minuman</option>
+                        <option>Transportasi</option>
+                        <option>Cicilan / Peminjaman</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold mb-2">Deskripsi (opsional)</label>
+                    <input type="text" placeholder="Catatan..." class="w-full border border-gray-300 rounded-xl p-4 text-sm outline-none">
+                </div>
+
+                <button class="w-full bg-black text-white py-4 rounded-full font-bold mt-10">Simpan</button>
+            </div>
+        </div>
+
+        <div class="bg-white w-[375px] h-[812px] mx-auto rounded-[40px] shadow-2xl overflow-hidden relative flex flex-col border-8 border-gray-900">
+            <div class="pt-14 px-6 flex items-center gap-4 mb-6">
+                <div class="w-6 h-6 bg-gray-200 rounded"></div> <h1 class="text-lg font-bold">Analisis Peminjaman</h1>
+            </div>
+
+            <div class="px-6">
+                <div class="flex justify-between bg-gray-100 p-1 rounded-xl mb-8">
+                    <button class="px-4 py-2 bg-black text-white rounded-lg text-xs font-bold shadow">Minggu</button>
+                    <button class="px-4 py-2 text-gray-500 rounded-lg text-xs font-medium">Bulan</button>
+                    <button class="px-4 py-2 text-gray-500 rounded-lg text-xs font-medium">Tahun</button>
+                </div>
+
+                <div class="h-48 flex items-end justify-between gap-2 mb-8 px-2">
+                    <div class="w-8 bg-gray-200 rounded-t-md h-[40%]"></div>
+                    <div class="w-8 bg-gray-200 rounded-t-md h-[60%]"></div>
+                    <div class="w-8 bg-black rounded-t-md h-[80%] relative group">
+                         <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100">500k</div>
+                    </div>
+                    <div class="w-8 bg-gray-200 rounded-t-md h-[30%]"></div>
+                    <div class="w-8 bg-gray-200 rounded-t-md h-[50%]"></div>
+                    <div class="w-8 bg-gray-200 rounded-t-md h-[90%]"></div>
+                </div>
+                <div class="flex justify-between text-[10px] text-gray-400 px-2 mb-8">
+                    <span>Sen</span><span>Sel</span><span>Rab</span><span>Kam</span><span>Jum</span><span>Sab</span>
+                </div>
+
+                <h3 class="text-sm font-bold mb-4">Kategori Teratas</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-gray-200 rounded"></div>
+                            <div>
+                                <p class="text-sm font-bold">Cicilan Bank</p>
+                                <p class="text-xs text-gray-500">60% dari total</p>
+                            </div>
+                        </div>
+                        <div class="w-4 h-4 bg-gray-300 rounded-full"></div>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-gray-200 rounded"></div>
+                            <div>
+                                <p class="text-sm font-bold">Pinjaman Teman</p>
+                                <p class="text-xs text-gray-500">40% dari total</p>
+                            </div>
+                        </div>
+                        <div class="w-4 h-4 bg-gray-300 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white w-[375px] h-[812px] mx-auto rounded-[40px] shadow-2xl overflow-hidden relative flex flex-col border-8 border-gray-900">
+            <div class="pt-14 px-6 flex justify-between items-center mb-6">
+                <h1 class="text-lg font-bold">Detail Transaksi</h1>
+                <button class="text-sm text-gray-500">Batal</button>
+            </div>
+
+            <div class="px-6 space-y-6">
+                <div class="flex bg-gray-100 p-1 rounded-full">
+                    <button class="w-1/2 bg-black text-white py-2 rounded-full text-sm font-medium">Pengeluaran</button>
+                    <button class="w-1/2 text-gray-500 py-2 rounded-full text-sm font-medium">Pemasukan</button>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold mb-2">Jumlah</label>
+                    <div class="border border-gray-300 rounded-xl p-4">
+                        <p class="text-lg font-bold">Rp300.000,00</p>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold mb-2">Kategori</label>
+                    <div class="border border-gray-300 rounded-xl p-4 flex justify-between items-center">
+                        <span class="text-sm">Makanan</span>
+                        <div class="w-3 h-3 border-r-2 border-b-2 border-gray-400 rotate-45"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold mb-2">Deskripsi</label>
+                    <div class="border border-gray-300 rounded-xl p-4">
+                        <span class="text-sm">Belanja bulanan</span>
+                    </div>
+                </div>
+
+                <div class="pt-8 space-y-3">
+                    <button class="w-full bg-black text-white py-4 rounded-full font-bold">Simpan Perubahan</button>
+                    <button class="w-full bg-gray-100 text-red-600 py-4 rounded-full font-bold hover:bg-red-50">Hapus Transaksi</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white w-[375px] h-[812px] mx-auto rounded-[40px] shadow-2xl overflow-hidden relative flex flex-col border-8 border-gray-900">
+            <div class="pt-14 px-6 mb-6">
+                <h1 class="text-lg font-bold">Profil Saya</h1>
+            </div>
+
+            <div class="px-6 flex flex-col items-center">
+                <div class="w-24 h-24 bg-gray-200 rounded-full mb-4"></div>
+                <h2 class="text-xl font-bold">Leanna Leonardo</h2>
+                <p class="text-sm text-gray-500">leanna@example.com</p>
+                <button class="mt-4 px-6 py-2 border border-gray-300 rounded-full text-xs font-bold">Edit Profil</button>
+            </div>
+
+            <div class="mt-10 px-6 space-y-2">
+                <div class="p-4 border-b border-gray-100 flex justify-between items-center">
+                    <span class="text-sm font-medium">Pengaturan Akun</span>
+                    <div class="w-2 h-2 border-r-2 border-t-2 border-gray-300 rotate-45"></div>
+                </div>
+                <div class="p-4 border-b border-gray-100 flex justify-between items-center">
+                    <span class="text-sm font-medium">Keamanan</span>
+                    <div class="w-2 h-2 border-r-2 border-t-2 border-gray-300 rotate-45"></div>
+                </div>
+                <div class="p-4 border-b border-gray-100 flex justify-between items-center">
+                    <span class="text-sm font-medium">Bantuan</span>
+                    <div class="w-2 h-2 border-r-2 border-t-2 border-gray-300 rotate-45"></div>
+                </div>
+                <div class="p-4 flex justify-between items-center mt-10">
+                    <span class="text-sm font-bold text-red-600">Keluar / Logout</span>
+                </div>
+            </div>
+
+             <div class="absolute bottom-0 w-full h-20 border-t flex justify-around items-center px-6 bg-white">
+                <div class="w-6 h-6 bg-gray-400 rounded-sm"></div>
+                <div class="bg-gray-300 w-14 h-14 rounded-full flex items-center justify-center -mt-6 border-4 border-white shadow-lg text-2xl">+</div>
+                <div class="w-6 h-6 bg-black rounded-sm"></div> </div>
+        </div>
+
+    </div>
+</body>
+</html>
